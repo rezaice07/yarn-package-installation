@@ -11,5 +11,8 @@
         </ul>
       </li>
     </ul>
+    <h3>
+      <a class="anchor" href="#on-windows">On Windows</a>
+    </h3>
   </body>
 </html>
