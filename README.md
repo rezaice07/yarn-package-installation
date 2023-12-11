@@ -1,18 +1,54 @@
-<html>   
-  <body>
-    <h1 align="center">Yarn Package Installation Manual</h1>
-    <h3>Table of Contents</h3>
-    <ul>
-      <li>
-        Install and Update Yarn
-        <ul>
-          <li>On Linux</li>
-          <li><a href="#on-windows"> On Windows</a></li>
-        </ul>
-      </li>
-    </ul>
-    <h3>
-      <a class="anchor" href="#on-windows">On Windows</a>
-    </h3>
-  </body>
-</html>
+# Yarn Installation
+
+## Table of Contents
+- Install and Update Yarn
+  - *[On Linux](#on-linux)*
+  - *[On Windows](#on-windows)*
+
+
+<a name="on-linux"></a>
+### On Linux
+1. Update package list
+    ```
+    sudo apt update
+    ```
+
+2. Install dependencies
+    ```
+    sudo apt install curl software-properties-common
+    ```
+
+3. Add Yarn repository
+    ```
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/yarn-archive-keyring.gpg
+
+    echo "deb [signed-by=/usr/share/keyrings/yarn-archive-keyring.gpg] https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list > /dev/null
+
+    ```
+4. Update package list again
+    ```
+    sudo apt update
+    ```
+5. Install Yarn
+    ```
+    sudo apt install yarn
+    ```
+
+<a name="on-windows"></a>
+### **On Windows**
+
+1. Install yarn
+   ```markdown
+   npm install -g yarn
+2. Update yarn
+
+    ```
+    yarn set version latest
+    ```
+
+3. Check Yarn Version
+    ```
+    yarn --version
+    ```
+
+
