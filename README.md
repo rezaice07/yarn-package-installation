@@ -7,7 +7,7 @@
         Install and Update Yarn
         <ul>
           <li>On Linux</li>
-          <li>On Windows</li>
+          <li><a href="#on-windows"> On Windows</a></li>
         </ul>
       </li>
     </ul>
